@@ -8,7 +8,7 @@ interface Item {
   description: string;
 }
 export const loader: LoaderFunction = async ({ params }) => {
-  const response = await fetch(`http://localhost:5000/api/items/${params.id}`);
+  const response = await fetch(`http://localhost:3002/api/items/${params.id}`);
   if (!response.ok) {
     throw new Response("Item Not Found", { status: 404 });
   }

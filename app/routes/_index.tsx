@@ -14,7 +14,7 @@ interface Item {
 }
 
 export const loader: LoaderFunction = async () => {
-  const response = await fetch('http://localhost:5000/api/items');
+  const response = await fetch('http://localhost:3002/api/items');
   const items: Item[] = await response.json();
   return json(items);
 };
