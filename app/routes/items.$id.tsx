@@ -7,8 +7,6 @@ interface Item {
   name: string;
   description: string;
 }
-
-
 export const loader: LoaderFunction = async ({ params }) => {
   const response = await fetch(`http://localhost:5000/api/items/${params.id}`);
   if (!response.ok) {
@@ -17,10 +15,8 @@ export const loader: LoaderFunction = async ({ params }) => {
   const item: Item = await response.json();
   return json(item);
 };
-
 export default function ItemDetail() {
   const item = useLoaderData<Item>();
-
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold text-center">{item.name}</h1>

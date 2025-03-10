@@ -9,66 +9,64 @@ app.use(express.json());
 const items = [
   {
     id: 1,
-    category: 'artist',
-    name: 'the toy',
-    infoUrl: 'https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%97%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B9%8C',
-    age: 31,
+    category: 'metal',
+    name: 'Metallica',
+    infoUrl: 'https://en.wikipedia.org/wiki/Metallica',
+    age: 42,
     adopted: true,
-    birthday: '1995-12-01',
-    music: 'ก่อนฤดูฝน',
-    imageUrl: '/image/thetoy.png'
+    birthday: '1981-10-28',
+    music: 'Enter Sandman',
+    imageUrl: '/image/metallica.png'
   },
-
 
   {
     id: 2,
-    category: 'artist',
-    name: 'Bowky',
-    infoUrl: 'https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%9A%E0%B8%81%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A5%E0%B8%AD%E0%B9%89%E0%B8%AD%E0%B8%99',
-    age: 32,
+    category: 'metal',
+    name: 'Iron Maiden',
+    infoUrl: 'https://en.wikipedia.org/wiki/Iron_Maiden',
+    age: 49,
     adopted: true,
-    birthday: '1994-10-24',
-    music: 'คงคา',
-    imageUrl: '/image/Bowky.png'
+    birthday: '1975-12-25',
+    music: 'The Trooper',
+    imageUrl: '/image/iron_maiden.png'
   },
 
   {
     id: 3,
-    category: 'artist',
-    name: 'jeff',
-    infoUrl: 'https://en.wikipedia.org/wiki/Jeff_Satur',
-    age: 36,
+    category: 'metal',
+    name: 'Slipknot',
+    infoUrl: 'https://en.wikipedia.org/wiki/Slipknot_(band)',
+    age: 29,
     adopted: true,
-    birthday: '1995-03-06',
-    music: 'Dum Dum',
-    imageUrl: '/image/jeff.png'
+    birthday: '1995-09-01',
+    music: 'Duality',
+    imageUrl: '/image/slipknot.png'
   },
 
   {
     id: 4,
-    category: 'artist',
-    name: 'ส้มมารี',
-    infoUrl: 'https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B5_%E0%B9%80%E0%B8%AD%E0%B8%AD%E0%B9%80%E0%B8%88%E0%B8%99%E0%B8%B5_%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B9%8C',
-    age: 22,
+    category: 'metal',
+    name: 'Megadeth',
+    infoUrl: 'https://en.wikipedia.org/wiki/Megadeth',
+    age: 41,
     adopted: true,
-    birthday: '1992-03-02',
-    music: 'ไม่เคยจะคิด',
-    imageUrl: '/image/som.jpg'
+    birthday: '1983-06-10',
+    music: 'Symphony of Destruction',
+    imageUrl: '/image/megadeth.jpg'
   },
 
   {
     id: 5,
-    category: 'artist',
-    name: 'Tom Room39',
-    infoUrl: 'https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%A8%E0%B8%A3%E0%B8%B2_%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B9%8C',
-    age: 31,
+    category: 'metal',
+    name: 'Pantera',
+    infoUrl: 'https://en.wikipedia.org/wiki/Pantera',
+    age: 42,
     adopted: true,
-    birthday: '1994-06-06',
-    music: 'หน่วง',
-    imageUrl: '/image/tom.jpg'
+    birthday: '1981-07-01',
+    music: 'Cowboys from Hell',
+    imageUrl: '/image/pantera.jpg'
   }
 ];
-
 
 // Routes
 app.get('/api/items', (req, res) => {
